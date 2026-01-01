@@ -1,0 +1,398 @@
+<!--
+  BITECRAFT - Professional Fast Food Web Application
+  Home Page HTML
+  
+  This is the main landing page featuring hero section,
+  featured items, and key business information.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BITECRAFT - Fast, tasty, and reliable. Order delicious burgers, pizza, and more for delivery or pickup. Fresh ingredients, amazing taste, fast service.">
+    <meta name="keywords" content="fast food, burgers, pizza, delivery, takeout, restaurant, tasty food">
+    <meta property="og:title" content="BITECRAFT - Fast Food Restaurant">
+    <meta property="og:description" content="Order delicious fast food online. Fast delivery or pickup available.">
+    <meta property="og:type" content="website">
+    <title>BITECRAFT - Fast Food Restaurant | Order Online</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">🍔</span>
+                <span class="logo-text">BITECRAFT</span>
+            </a>
+            
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="order.html" class="nav-link">Order</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="cart-icon" aria-label="View cart">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"/>
+                        <circle cx="20" cy="21" r="1"/>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge">🔥 30-Minute Delivery Guarantee</span>
+                <h1 class="hero-title">
+                    Delicious Food, <span>Delivered Fast</span>
+                </h1>
+                <p class="hero-desc">
+                    Experience the taste of perfection with BITECRAFT. Fresh ingredients, 
+                    mouthwatering recipes, and lightning-fast delivery right to your doorstep.
+                </p>
+                <div class="hero-buttons">
+                    <a href="order.html" class="btn btn-accent btn-lg">Order Now</a>
+                    <a href="menu.html" class="btn btn-outline btn-lg" style="color: #fff; border-color: #fff;">View Menu</a>
+                </div>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22s-8-4.5-8-11.8A8 8 0 0112 2a8 8 0 018 8.2c0 7.3-8 11.8-8 11.8z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        <span>Delivery in 30 min</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                        <span>4.9 ★ Rating</span>
+                    </div>
+                    <div class="feature-item">
+                        <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        <span>Open 24/7</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="section" style="background: #fff;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 40px;">
+                <h2 style="margin-bottom: 10px;">Popular Categories</h2>
+                <p style="color: #666; max-width: 600px; margin: 0 auto;">Explore our most loved menu items, handpicked for your enjoyment</p>
+            </div>
+            <div class="menu-grid">
+                <div class="menu-card" data-category="burgers" style="cursor: pointer;" onclick="window.location.href='menu.html'">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop" alt="Burgers">
+                    </div>
+                    <div class="menu-card-content" style="text-align: center;">
+                        <h3 class="menu-card-title">Juicy Burgers</h3>
+                        <p class="menu-card-desc">Handcrafted burgers with premium ingredients</p>
+                        <span style="color: var(--primary); font-weight: 600;">From $8.99</span>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="pizza" style="cursor: pointer;" onclick="window.location.href='menu.html'">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=400&h=300&fit=crop" alt="Pizza">
+                        <span class="menu-badge">Hot</span>
+                    </div>
+                    <div class="menu-card-content" style="text-align: center;">
+                        <h3 class="menu-card-title">Fresh Pizza</h3>
+                        <p class="menu-card-desc">Wood-fired pizzas with authentic toppings</p>
+                        <span style="color: var(--primary); font-weight: 600;">From $14.99</span>
+                    </div>
+                </div>
+                
+                <div class="menu-card" data-category="combo" style="cursor: pointer;" onclick="window.location.href='menu.html'">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&h=300&fit=crop" alt="Combos">
+                        <span class="menu-badge">Best Value</span>
+                    </div>
+                    <div class="menu-card-content" style="text-align: center;">
+                        <h3 class="menu-card-title">Meal Combos</h3>
+                        <p class="menu-card-desc">Complete meals at unbeatable prices</p>
+                        <span style="color: var(--primary); font-weight: 600;">From $11.99</span>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="menu.html" class="btn btn-primary">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section" style="background: var(--secondary); color: #fff;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <h2 style="color: #fff; margin-bottom: 10px;">Why Choose BITECRAFT</h2>
+                <p style="color: rgba(255,255,255,0.8); max-width: 600px; margin: 0 auto;">We're committed to delivering the best fast food experience</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card">
+                    <div class="value-icon">⚡</div>
+                    <h3>Lightning Fast</h3>
+                    <p>30-minute delivery guarantee or your order is free. We value your time.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🔥</div>
+                    <h3>Always Fresh</h3>
+                    <p>Made-to-order meals using only the freshest ingredients available.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">💯</div>
+                    <h3>Quality Guaranteed</h3>
+                    <p>100% satisfaction promise. Not happy? We'll make it right.</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🌱</div>
+                    <h3>Quality Ingredients</h3>
+                    <p>Sourced from trusted local suppliers for the best taste.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <h2 style="margin-bottom: 10px;">How to Order</h2>
+                <p style="color: #666; max-width: 600px; margin: 0 auto;">Getting your favorite food has never been easier</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px;">
+                <div style="text-align: center; padding: 30px;">
+                    <div style="width: 80px; height: 80px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: #fff; font-size: 2rem; font-weight: 700;">1</div>
+                    <h3 style="margin-bottom: 10px;">Choose Your Meal</h3>
+                    <p style="color: #666;">Browse our menu and select your favorite items</p>
+                </div>
+                <div style="text-align: center; padding: 30px;">
+                    <div style="width: 80px; height: 80px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: #fff; font-size: 2rem; font-weight: 700;">2</div>
+                    <h3 style="margin-bottom: 10px;">Customize</h3>
+                    <p style="color: #666;">Add special instructions and choose your extras</p>
+                </div>
+                <div style="text-align: center; padding: 30px;">
+                    <div style="width: 80px; height: 80px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: #fff; font-size: 2rem; font-weight: 700;">3</div>
+                    <h3 style="margin-bottom: 10px;">Place Order</h3>
+                    <p style="color: #666;">Complete checkout with delivery or pickup</p>
+                </div>
+                <div style="text-align: center; padding: 30px;">
+                    <div style="width: 80px; height: 80px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; color: #fff; font-size: 2rem; font-weight: 700;">4</div>
+                    <h3 style="margin-bottom: 10px;">Enjoy!</h3>
+                    <p style="color: #666;">Receive your hot, fresh meal in minutes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section" style="background: #fafafa;">
+        <div class="container">
+            <div style="text-align: center; margin-bottom: 50px;">
+                <h2 style="margin-bottom: 10px;">What Our Customers Say</h2>
+                <p style="color: #666; max-width: 600px; margin: 0 auto;">Real reviews from real food lovers</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+                <div style="background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                    <div style="color: #FFC107; margin-bottom: 15px;">★★★★★</div>
+                    <p style="color: #555; margin-bottom: 20px; font-style: italic;">"Best burger I've had in years! The delivery was incredibly fast and the food arrived still hot. Will definitely order again!"</p>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="width: 48px; height: 48px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 600;">JD</div>
+                        <div>
+                            <div style="font-weight: 600;">John Doe</div>
+                            <div style="font-size: 0.85rem; color: #888;">Regular Customer</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                    <div style="color: #FFC107; margin-bottom: 15px;">★★★★★</div>
+                    <p style="color: #555; margin-bottom: 20px; font-style: italic;">"The family combo was perfect for our weekend dinner. Great value, amazing taste, and the kids loved it. Highly recommend!"</p>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="width: 48px; height: 48px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 600;">SM</div>
+                        <div>
+                            <div style="font-weight: 600;">Sarah Miller</div>
+                            <div style="font-size: 0.85rem; color: #888;">Family Customer</div>
+                        </div>
+                    </div>
+                </div>
+                <div style="background: #fff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.08);">
+                    <div style="color: #FFC107; margin-bottom: 15px;">★★★★★</div>
+                    <p style="color: #555; margin-bottom: 20px; font-style: italic;">"I've tried almost everything on the menu and it's all consistently delicious. The mobile ordering makes it so convenient!"</p>
+                    <div style="display: flex; align-items: center; gap: 12px;">
+                        <div style="width: 48px; height: 48px; background: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #fff; font-weight: 600;">MK</div>
+                        <div>
+                            <div style="font-weight: 600;">Mike K.</div>
+                            <div style="font-size: 0.85rem; color: #888;">Loyal Customer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Hungry Yet?</h2>
+            <p>Don't wait - order your favorite meal now and experience the BITECRAFT difference</p>
+            <a href="order.html" class="btn btn-accent btn-lg">Place Your Order</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">🍔</span>
+                        <span class="logo-text">BITECRAFT</span>
+                    </a>
+                    <p class="footer-desc">Fast, tasty, and reliable - serving the best fast food since 2020.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="order.html">Order</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>123 Food Street, Tasty City, TC 12345</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>hello@bitecraft.com</span>
+                        </li>
+                    </ul>
+                    <div class="opening-hours">
+                        <h5>Opening Hours</h5>
+                        <p>Mon - Thu: 10:00 AM - 10:00 PM</p>
+                        <p>Fri - Sat: 10:00 AM - 11:00 PM</p>
+                        <p>Sunday: 11:00 AM - 9:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 BITECRAFT. All rights reserved.</p>
+                <p class="footer-credit">Crafted with love for food lovers everywhere</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="overlay"></div>
+    <div class="cart-modal">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close" aria-label="Close cart">&times;</button>
+        </div>
+        <div class="cart-body">
+            <div class="cart-empty">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="9" cy="21" r="1"/>
+                    <circle cx="20" cy="21" r="1"/>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+                </svg>
+                <p>Your cart is empty</p>
+                <a href="menu.html" class="btn btn-primary">Browse Menu</a>
+            </div>
+            <div class="cart-items"></div>
+        </div>
+        <div class="cart-summary">
+            <div class="cart-summary-row">
+                <span>Total</span>
+                <span class="cart-summary-total">$0.00</span>
+            </div>
+            <a href="order.html" class="btn btn-primary btn-block">Proceed to Checkout</a>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

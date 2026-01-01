@@ -1,0 +1,464 @@
+<!--
+  BITECRAFT - Professional Fast Food Web Application
+  Menu Page HTML
+  
+  This page displays the menu with category filters
+  and food item cards.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore BITECRAFT's delicious menu - burgers, pizzas, drinks, and more. Fresh ingredients, amazing taste, fast delivery.">
+    <title>Menu | BITECRAFT - Fast Food Restaurant</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">🍔</span>
+                <span class="logo-text">BITECRAFT</span>
+            </a>
+            
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link active">Menu</a></li>
+                <li><a href="order.html" class="nav-link">Order</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="cart-icon" aria-label="View cart">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"/>
+                        <circle cx="20" cy="21" r="1"/>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Our Menu</h1>
+            <p class="page-subtitle">Discover our delicious selection of freshly prepared meals</p>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu-section">
+        <div class="container">
+            <!-- Category Filters -->
+            <div class="menu-filters">
+                <button class="filter-btn active" data-category="all">All Items</button>
+                <button class="filter-btn" data-category="burgers">Burgers</button>
+                <button class="filter-btn" data-category="pizza">Pizza</button>
+                <button class="filter-btn" data-category="drinks">Drinks</button>
+                <button class="filter-btn" data-category="sides">Sides</button>
+                <button class="filter-btn" data-category="combo">Combos</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid">
+                <!-- Burgers -->
+                <div class="menu-card" data-category="burgers" data-id="1">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=300&fit=crop" alt="Classic Burger">
+                        <span class="menu-badge">Bestseller</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Classic Burger</h3>
+                        <p class="menu-card-desc">Juicy beef patty with fresh lettuce, tomato, onion, and our secret sauce</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price">$8.99</span>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-id="1">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="burgers" data-id="2">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1553979459-d2229ba7433b?w=400&h=300&fit=crop" alt="Bacon Cheese Burger">
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Bacon Cheese Burger</h3>
+                        <p class="menu-card-desc">Smoky bacon, melted cheddar, crispy onions, and BBQ sauce</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price">$10.99</span>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-id="2">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="burgers" data-id="3">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1550152472-3a60c1705d06?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Veggie Burger">
+                        <span class="menu-badge green">Vegetarian</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Veggie Burger</h3>
+                        <p class="menu-card-desc">Plant-based patty with avocado, sprouts, and hummus</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price">$9.49</span>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-id="3">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="burgers" data-id="4">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&h=300&fit=crop" alt="Double Stack">
+                        <span class="menu-badge">Popular</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Double Stack</h3>
+                        <p class="menu-card-desc">Two beef patties, double cheese, pickles, and special sauce</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price">$12.99</span>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-id="4">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pizza -->
+                <div class="menu-card" data-category="pizza" data-id="5">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1604068549290-dea0e4a305ca?w=400&h=300&fit=crop" alt="Margherita Pizza">
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Margherita Pizza</h3>
+                        <p class="menu-card-desc">Fresh mozzarella, tomatoes, basil, and olive oil on thin crust</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price">$14.99</span>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-id="5">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="pizza" data-id="6">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1628840042765-356cda07504e?w=400&h=300&fit=crop" alt="Pepperoni Pizza">
+                        <span class="menu-badge">Bestseller</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Pepperoni Pizza</h3>
+                        <p class="menu-card-desc">Classic pepperoni with melted mozzarella and Italian herbs</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price">$16.99</span>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-id="6">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="pizza" data-id="7">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&h=300&fit=crop" alt="BBQ Chicken Pizza">
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">BBQ Chicken Pizza</h3>
+                        <p class="menu-card-desc">Grilled chicken, red onions, cilantro with BBQ sauce base</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price">$18.99</span>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-id="7">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Drinks -->
+                <div class="menu-card" data-category="drinks" data-id="8">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1581636625402-29b2a704ef13?w=400&h=300&fit=crop" alt="Fresh Lemonade">
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Fresh Lemonade</h3>
+                        <p class="menu-card-desc">Homemade lemonade with fresh lemons and mint</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price">$3.49</span>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-id="8">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="drinks" data-id="9">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1572490122747-3968b75cc699?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Milkshake">
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Chocolate Milkshake</h3>
+                        <p class="menu-card-desc">Rich and creamy chocolate shake with whipped cream</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price">$5.99</span>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-id="9">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="drinks" data-id="10">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?w=400&h=300&fit=crop" alt="Iced Coffee">
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Iced Coffee</h3>
+                        <p class="menu-card-desc">Cold brewed coffee with milk and caramel drizzle</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price">$4.49</span>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-id="10">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sides -->
+                <div class="menu-card" data-category="sides" data-id="11">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1734774797087-b6435057a15e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3Jpc3B5JTIwZnJpZXN8ZW58MHx8MHx8fDA%3D" alt="French Fries">
+                        <span class="menu-badge">Popular</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Crispy Fries</h3>
+                        <p class="menu-card-desc">Golden crispy fries with sea salt and pepper</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price">$3.99</span>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-id="11">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="sides" data-id="12">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1625938144755-652e08e359b7?w=400&h=300&fit=crop" alt="Onion Rings">
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Onion Rings</h3>
+                        <p class="menu-card-desc">Beer-battered onion rings with dipping sauce</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price">$4.99</span>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-id="12">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="sides" data-id="13">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1524114664604-cd8133cd67ad?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YnVmZmFsbyUyMHdpbmd8ZW58MHx8MHx8fDA%3D" alt="Chicken Wings">
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Buffalo Wings</h3>
+                        <p class="menu-card-desc">Crispy wings tossed in spicy buffalo sauce</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price">$8.99</span>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-id="13">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Combos -->
+                <div class="menu-card" data-category="combo" data-id="14">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&h=300&fit=crop" alt="Family Bundle">
+                        <span class="menu-badge">Best Value</span>
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Family Bundle</h3>
+                        <p class="menu-card-desc">4 burgers, large fries, and 4 drinks for the whole family</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price">$45.99</span>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-id="14">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="combo" data-id="15">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1551782450-17144efb9c50?w=400&h=300&fit=crop" alt="Meal Deal">
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Classic Meal Deal</h3>
+                        <p class="menu-card-desc">Burger, fries, and drink combo with savings</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price">$11.99</span>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-id="15">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="combo" data-id="16">
+                    <div class="menu-card-image">
+                        <img src="https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&h=300&fit=crop" alt="Pizza Party Pack">
+                    </div>
+                    <div class="menu-card-content">
+                        <h3 class="menu-card-title">Pizza Party Pack</h3>
+                        <p class="menu-card-desc">2 large pizzas, garlic bread, and 2L soda</p>
+                        <div class="menu-card-footer">
+                            <span class="menu-card-price">$34.99</span>
+                            <button class="btn btn-primary btn-sm add-to-cart" data-id="16">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Order?</h2>
+            <p>Get your favorite meals delivered fast or pick up at our store</p>
+            <a href="order.html" class="btn btn-accent btn-lg">Place Your Order</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">🍔</span>
+                        <span class="logo-text">BITECRAFT</span>
+                    </a>
+                    <p class="footer-desc">Fast, tasty, and reliable - serving the best fast food since 2020.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="order.html">Order</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>123 Food Street, Tasty City, TC 12345</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>hello@bitecraft.com</span>
+                        </li>
+                    </ul>
+                    <div class="opening-hours">
+                        <h5>Opening Hours</h5>
+                        <p>Mon - Thu: 10:00 AM - 10:00 PM</p>
+                        <p>Fri - Sat: 10:00 AM - 11:00 PM</p>
+                        <p>Sunday: 11:00 AM - 9:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 BITECRAFT. All rights reserved.</p>
+                <p class="footer-credit">Crafted with ❤️ for food lovers everywhere</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="overlay"></div>
+    <div class="cart-modal">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close" aria-label="Close cart">&times;</button>
+        </div>
+        <div class="cart-body">
+            <div class="cart-empty">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="9" cy="21" r="1"/>
+                    <circle cx="20" cy="21" r="1"/>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+                </svg>
+                <p>Your cart is empty</p>
+                <a href="menu.html" class="btn btn-primary">Browse Menu</a>
+            </div>
+            <div class="cart-items"></div>
+        </div>
+        <div class="cart-summary">
+            <div class="cart-summary-row">
+                <span>Total</span>
+                <span class="cart-summary-total">$0.00</span>
+            </div>
+            <a href="order.html" class="btn btn-primary btn-block">Proceed to Checkout</a>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize menu page specific functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            // Update cart count on load
+            if (typeof updateCartUI === 'function') {
+                updateCartUI();
+            }
+        });
+    </script>
+</body>
+</html>

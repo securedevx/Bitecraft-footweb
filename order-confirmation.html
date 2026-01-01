@@ -1,0 +1,299 @@
+<!--
+  BITECRAFT - Professional Fast Food Web Application
+  Order Confirmation Page HTML
+  
+  This page displays order confirmation after successful checkout.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your BITECRAFT order has been confirmed. Thank you for your order!">
+    <title>Order Confirmed | BITECRAFT - Fast Food Restaurant</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-icon">🍔</span>
+                <span class="logo-text">BITECRAFT</span>
+            </a>
+            
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="order.html" class="nav-link">Order</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="cart-icon" aria-label="View cart">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <circle cx="9" cy="21" r="1"/>
+                        <circle cx="20" cy="21" r="1"/>
+                        <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+                    </svg>
+                    <span class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Confirmation Section -->
+    <section class="confirmation-section">
+        <div class="container">
+            <div class="confirmation-card">
+                <div class="confirmation-icon">
+                    <svg width="80" height="80" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="10" stroke="#4CAF50" stroke-width="2"/>
+                        <path d="M8 12l2.5 2.5L16 9" stroke="#4CAF50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                
+                <h1>Thank You for Your Order!</h1>
+                <p class="confirmation-message">Your order has been successfully placed and is being prepared with care.</p>
+                
+                <div class="order-details" id="orderDetails">
+                    <!-- Order details will be populated by JavaScript -->
+                </div>
+                
+                <div class="confirmation-actions">
+                    <a href="menu.html" class="btn btn-primary">Order More</a>
+                    <a href="index.html" class="btn btn-outline">Back to Home</a>
+                </div>
+                
+                <div class="confirmation-info">
+                    <div class="info-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                        <div>
+                            <strong>Estimated Delivery</strong>
+                            <p>30-45 minutes</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                        </svg>
+                        <div>
+                            <strong>Order Updates</strong>
+                            <p>You'll receive SMS notifications</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-icon">🍔</span>
+                        <span class="logo-text">BITECRAFT</span>
+                    </a>
+                    <p class="footer-desc">Fast, tasty, and reliable - serving the best fast food since 2020.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="order.html">Order</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact Info</h4>
+                    <ul class="contact-info">
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>123 Food Street, Tasty City, TC 12345</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                            </svg>
+                            <span>+1 (555) 123-4567</span>
+                        </li>
+                        <li>
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>hello@bitecraft.com</span>
+                        </li>
+                    </ul>
+                    <div class="opening-hours">
+                        <h5>Opening Hours</h5>
+                        <p>Mon - Thu: 10:00 AM - 10:00 PM</p>
+                        <p>Fri - Sat: 10:00 AM - 11:00 PM</p>
+                        <p>Sunday: 11:00 AM - 9:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 BITECRAFT. All rights reserved.</p>
+                <p class="footer-credit">Crafted with ❤️ for food lovers everywhere</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="overlay"></div>
+    <div class="cart-modal">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="cart-close" aria-label="Close cart">&times;</button>
+        </div>
+        <div class="cart-body">
+            <div class="cart-empty">
+                <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <circle cx="9" cy="21" r="1"/>
+                    <circle cx="20" cy="21" r="1"/>
+                    <path d="M1 1h4l2.68 13.39a2 2 0 002 1.61h9.72a2 2 0 002-1.61L23 6H6"/>
+                </svg>
+                <p>Your cart is empty</p>
+                <a href="menu.html" class="btn btn-primary">Browse Menu</a>
+            </div>
+            <div class="cart-items"></div>
+        </div>
+        <div class="cart-summary">
+            <div class="cart-summary-row">
+                <span>Total</span>
+                <span class="cart-summary-total">$0.00</span>
+            </div>
+            <a href="order.html" class="btn btn-primary btn-block">Proceed to Checkout</a>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script>
+        // Order confirmation page functionality
+        document.addEventListener('DOMContentLoaded', () => {
+            updateCartUI();
+            displayOrderConfirmation();
+        });
+
+        function displayOrderConfirmation() {
+            const orderDetails = document.getElementById('orderDetails');
+            const savedOrder = localStorage.getItem('bitecraft_last_order');
+            
+            if (!savedOrder || !orderDetails) {
+                orderDetails.innerHTML = '<p>No order details available.</p>';
+                return;
+            }
+            
+            const order = JSON.parse(savedOrder);
+            const orderDate = new Date(order.timestamp);
+            
+            orderDetails.innerHTML = `
+                <div class="detail-row">
+                    <span class="detail-label">Order ID</span>
+                    <span class="detail-value">${order.orderId}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Order Date</span>
+                    <span class="detail-value">${orderDate.toLocaleDateString('en-US', { 
+                        weekday: 'long', 
+                        year: 'numeric', 
+                        month: 'long', 
+                        day: 'numeric',
+                        hour: '2-digit',
+                        minute: '2-digit'
+                    })}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Customer</span>
+                    <span class="detail-value">${order.customer.name}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Delivery Address</span>
+                    <span class="detail-value">${order.customer.address}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Contact</span>
+                    <span class="detail-value">${order.customer.phone}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Items</span>
+                    <span class="detail-value">${order.items.length} item(s)</span>
+                </div>
+                <div class="detail-row total">
+                    <span class="detail-label">Total Amount</span>
+                    <span class="detail-value">$${order.total.toFixed(2)}</span>
+                </div>
+                <div class="detail-row">
+                    <span class="detail-label">Payment Method</span>
+                    <span class="detail-value">${order.paymentMethod.charAt(0).toUpperCase() + order.paymentMethod.slice(1)}</span>
+                </div>
+            `;
+        }
+
+        // Cart modal handlers
+        document.querySelector('.cart-icon')?.addEventListener('click', openCartModal);
+        document.querySelector('.cart-close')?.addEventListener('click', closeCartModal);
+        document.querySelector('.overlay')?.addEventListener('click', closeCartModal);
+    </script>
+</body>
+</html>
